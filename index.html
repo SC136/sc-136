@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sc136 Documentation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: Montserrat;
+    }
+
+    .tit {
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .pip {
+      background: -webkit-linear-gradient(#eee, rgb(230, 36, 36));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sep {
+      padding-bottom: 10px;
+      border-bottom: 5px solid rgb(112, 112, 112);
+      line-height: 48px;
+    }
+
+    .codee {
+      line-height: 1.225rem;
+      background: #2f3136;
+      border: 1px solid #202225;
+      padding: 0.5em;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .funcn {
+      background: -webkit-linear-gradient(#eee, rgb(36, 65, 230));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="tit">sc136 Documentation</h1>
+    <p class="pip">Just A Simple Utility Package!</p>
+    <div class="sep"></div>
+    <a class="nl" href="https://www.npmjs.com/package/sc136">npmjs.com</a> | <a class="nl" href="https://discord.gg/UVWjuAh">Discord</a> | <a class="nl" href="https://github.com/SC136">GitHub</a>
+    <div class="sep"></div>
+  </header>
+  <main>
+    <section>
+      <h2 class="funcn">Shorten function</h2>
+      <p>Shortens The String To A Specified Length!</p>
+      <div class="codee">
+        <pre><code>const sc = require('sc136'); // Importing The Package<br><br>let text = 'hi how are you'; // A String<br><br>(sc.Shorten(text, 6)); // First Argument Is The String, Second Is A Number<br><br>// returns: 'hi how...'</code></pre>
+      </div>
+    </section>
+    <section>
+      <h2 class="funcn">Reverse function</h2>
+      <p>Reverses The String!</p>
+      <div class="codee">
+        <pre><code>const sc = require('sc136'); // Importing The Package<br><br>let text = 'hi how are you';<br><br>console.log(sc.Reverse(text)); // First Argument Is A String<br><br>// returns: 'uoy era woh ih'</code></pre>
+      </div>
+    </section>
+    <section>
+      <h2 class="funcn">genRandomHex function</h2>
+      <p>Generates A Random Hex Color Code!</p>
+      <div class="codee">
+      <pre><code>const sc = require('sc136'); // Importing The Package<br><br>console.log(sc.genRandomHex()) // No Arguments Needed<br><br>// returns: '#0059ff'</code></pre>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023</p>
+  </footer>
+</body>
+
+</html>
